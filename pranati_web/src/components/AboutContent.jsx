@@ -55,13 +55,14 @@ function AboutContent() {
             </p>
           </Col>
           <Col sm={6}>
-            <div className="pt-5">
+            <div className="pt-5 ">
               <div
                 onClick={() => setOpen1(!open1)}
                 aria-controls="digitalMarketing-collapse-text"
                 aria-expanded={open1}
+                className="user-select-none"
               >
-                WHAT IS THE DIGITAL MARKETING ? 
+                WHAT IS THE DIGITAL MARKETING ?
               </div>
               <Placeholder xs={12} bg="info" size="xs" />
               <Collapse in={open1}>
@@ -77,6 +78,7 @@ function AboutContent() {
                   onClick={() => setOpen2(!open2)}
                   aria-controls="socialMediaMarketing-collapse-text"
                   aria-expanded={open2}
+                  className="user-select-none"
                 >
                   WHAT IS SOCIAL MEDIA MARKETING ?
                 </div>
@@ -93,6 +95,7 @@ function AboutContent() {
                   onClick={() => setOpen3(!open3)}
                   aria-controls="serchengin-collapse-text"
                   aria-expanded={open3}
+                  className="user-select-none"
                 >
                   WHAT IS SEARCH ENGINE OPTIMIZATION (SEO)?
                 </div>
