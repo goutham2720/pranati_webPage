@@ -9,10 +9,10 @@ function DevelopmentServices() {
   return (
     <>
       <Container>
-        <h2 className="bg-secondary py-3 text-light my-5 px-2">
+        <h2 className="bg-secondary py-3 text-light my-5 px-3">
           Development Services
         </h2>
-        <Row className="my-5 py-3 shadow-sm" >
+        <Row className="my-5 py-3 shadow" >
           <Col sm={6} >
             <Image
               className="w-100"
@@ -32,7 +32,7 @@ function DevelopmentServices() {
             </p>
           </Col>
         </Row>
-        <Row className="my-5 py-3 shadow-sm">
+        <Row className="my-5 py-3 shadow">
           <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
             <h3>Mobile App Development</h3>
             <Placeholder xs={12} bg="info" size="xs" />
@@ -53,7 +53,7 @@ function DevelopmentServices() {
             />
           </Col>
         </Row>
-        <Row className="my-5 py-3 shadow-sm">
+        <Row className="my-5 py-3 shadow">
           <Col sm={6} className>
             <Image
               className="w-100"
@@ -70,7 +70,7 @@ function DevelopmentServices() {
             </p>
           </Col>
         </Row>
-        <Row className="my-5 py-3 shadow-sm">
+        <Row className="my-5 py-3 shadow">
           <Col sm={6} xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
             <h3>Big Data Analysis and Mining</h3>
             <Placeholder xs={12} bg="info" size="xs" />
@@ -92,7 +92,7 @@ function DevelopmentServices() {
             />
           </Col>
         </Row>
-        <Row className="my-5 py-3 shadow-sm">
+        <Row className="my-5 py-3 shadow">
           <Col sm={6} className>
             <Image
               className="w-100"
