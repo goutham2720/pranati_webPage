@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import {
@@ -11,17 +12,19 @@ import { Link } from "react-router-dom";
 function ItSupport() {
   return (
     <>
+    <Container>
+
       <h3 className="text-center mt-5">IT SUPPORT FOR BUSINESS.</h3>
       <p className="text-center">
         Are you a small/medium size organization needs IT supports and services
         for specific timeframe… We are here to provide you a flexible IT support
         services and technology solutions with a fixed/hourly rate.
       </p>
-      <Row className="my-5 d-flex justify-content-evenly">
+      <Row className="d-flex justify-content-evenly">
         <Col
           as={Link}
           to="/Contact"
-          className=" text-decoration-none border border-3 border-info rounded mx-2"
+          className=" text-decoration-none border border-3 border-info rounded mx-3 my-3"
           sm={3}
         >
           <div className="text-center fs-1 text-info">
@@ -37,9 +40,9 @@ function ItSupport() {
         <Col
           as={Link}
           to="/Contact"
-          className="text-decoration-none border border-3 border-info rounded mx-2"
+          className="text-decoration-none border border-3 border-info rounded mx-3 my-3"
           sm={3}
-        >
+          >
           <div className="text-center fs-1 text-info">
             <BsFillLaptopFill />
           </div>
@@ -52,9 +55,9 @@ function ItSupport() {
         <Col
           as={Link}
           to="/Contact"
-          className="text-decoration-none border border-3 border-info rounded mx-2"
+          className="text-decoration-none border border-3 border-info rounded mx-3 my-3"
           sm={3}
-        >
+          >
           <div className="text-center fs-1 text-info">
             <BsFillGearFill />
           </div>
@@ -65,6 +68,7 @@ function ItSupport() {
           </p>
         </Col>
       </Row>
+          </Container>
     </>
   );
 }

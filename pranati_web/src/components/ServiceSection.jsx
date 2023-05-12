@@ -6,9 +6,9 @@ import Row from "react-bootstrap/esm/Row";
 function ServiceSection() {
   return (
     <Row className="d-flex justify-content-evenly py-5">
-      <Card className="py-2 fw-bolder text-center fs-2 bg-secondary text-white my-3 ">
+      <div className="py-2 fw-bolder text-center fs-2 bg-secondary text-white my-5 ">
         Services
-      </Card>
+      </div>
       <Col sm={3}>
         <Card className="shadow  bg-body rounded">
           <Card.Img
