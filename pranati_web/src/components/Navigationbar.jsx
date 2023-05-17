@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Navigationbar() {
   return (
@@ -18,10 +19,40 @@ function Navigationbar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="navigationbar-link">
-            <Nav.Link as={Link} to="/" className="text-dark fs-5 px-3 ">Home</Nav.Link>
-            <Nav.Link as={Link} to="/About" className="text-dark fs-5 px-3">About Us</Nav.Link>
-            <Nav.Link as={Link} to="/Service" className="text-dark fs-5 px-3">Services</Nav.Link>
-            <Nav.Link as={Link} to="/Contact" className="text-dark fs-5 px-3">Contact Us</Nav.Link>
+            <motion.div
+              initial={{ opacity: 0.8 }}
+              whileHover={{ scale: 1.3, opacity: 1 }}
+              
+            >
+              <Nav.Link as={Link} to="/" className="text-dark fs-5 px-3 ">
+                Home
+              </Nav.Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0.8 }}
+              whileHover={{ scale: 1.3, opacity: 1 }}
+            >
+              <Nav.Link as={Link} to="/About" className="text-dark fs-5 px-3">
+                About Us
+              </Nav.Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.8 }}
+              whileHover={{ scale: 1.3, opacity: 1 }}
+            >
+              <Nav.Link as={Link} to="/Service" className="text-dark fs-5 px-3">
+                Services
+              </Nav.Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.8 }}
+              whileHover={{ scale: 1.3, opacity: 1 }}
+            >
+              <Nav.Link as={Link} to="/Contact" className="text-dark fs-5 px-3">
+                Contact Us
+              </Nav.Link>
+            </motion.div>
           </Nav>
         </Navbar.Collapse>
       </Container>

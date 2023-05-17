@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 function ContactSection() {
   return (
+    <>
     <div className="py-3 bg-dark " gap={3}>
       <Row>
         <Col sm={4} className=" px-5 ">
@@ -36,6 +37,7 @@ function ContactSection() {
         <BsInstagram className="mx-3" />
       </div>
     </div>
+    </>
   );
 }
 

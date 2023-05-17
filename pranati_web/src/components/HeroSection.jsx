@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
+import { motion, spring } from "framer-motion";
 
 function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -14,9 +15,9 @@ function HeroSection() {
   };
 
   return (
-    <div>
-      <div className="about-info">
-        <Container className="px-3 my-5">
+    <>
+      
+        <Container className=" my-5">
           <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
               <img
@@ -68,38 +69,63 @@ function HeroSection() {
                 src="https://bomitsolutions.co.uk/wp-content/uploads/business-support.jpg"
                 className="w-100"
               /> */}
-              <Image className="w-100" src="https://bomitsolutions.co.uk/wp-content/uploads/business-support.jpg" />
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{
+                  duration: .5,
+                }}
+              >
+                <Image
+                  className="w-100"
+                  src="https://bomitsolutions.co.uk/wp-content/uploads/business-support.jpg"
+                />
+              </motion.div>
             </Col>
             <Col sm={6}>
               <Row>
-                <h1 className="about-title">About</h1>
+                <motion.div
+                  initial={{ x: 100, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: false, amount: 1 }}
+                >
+                  <h1 className="about-title">About</h1>
+                </motion.div>
               </Row>
               <Row>
-                <p className="about-content">
-                  Pranati Technologies is a group of technology experts having
-                  an average experience more than 23 years and more than
-                  2,88,000 man hour work experience with the international
-                  clients. We are capable of handling various web technologies
-                  and application development. We have been working for
-                  international clients world-wide with remote development and
-                  support services.
-                </p>
-                <p className="about-content">
-                  We have a Web Development and Branding Team which will take
-                  care of all your DIGITAL requirements. This team will help you
-                  to find Domain Names, Hosting, Web Designing, Logo Creation,
-                  E-Brochure Design, Flyer Design, SEO(Search Engine
-                  Optimization), Social Media Marketing, Free and Paid
-                  Advertisement, Branding and other promotional activities. We
-                  happy to give FREE consultation for your digital needs, those
-                  who are new to this DIGITAL world.
-                </p>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{  duration: .5 }}
+                >
+                  <p className="about-content">
+                    Pranati Technologies is a group of technology experts having
+                    an average experience more than 23 years and more than
+                    2,88,000 man hour work experience with the international
+                    clients. We are capable of handling various web technologies
+                    and application development. We have been working for
+                    international clients world-wide with remote development and
+                    support services.
+                  </p>
+                  <p className="about-content">
+                    We have a Web Development and Branding Team which will take
+                    care of all your DIGITAL requirements. This team will help
+                    you to find Domain Names, Hosting, Web Designing, Logo
+                    Creation, E-Brochure Design, Flyer Design, SEO(Search Engine
+                    Optimization), Social Media Marketing, Free and Paid
+                    Advertisement, Branding and other promotional activities. We
+                    happy to give FREE consultation for your digital needs,
+                    those who are new to this DIGITAL world.
+                  </p>
+                </motion.div>
               </Row>
             </Col>
           </Row>
         </Container>
-      </div>
-    </div>
+      
+    </>
   );
 }
 

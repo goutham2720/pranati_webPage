@@ -8,14 +8,15 @@ import Footer from "./components/Footer";
 
 function HomePage() {
   return (
-    <div>
+    <>
       <Navbar />
       <HeroSection />
       <ServiceSection />
       <WhatWeOffer />
       <ContactSection />
       <Footer />
-    </div>
+    
+    </>
   );
 }
 
