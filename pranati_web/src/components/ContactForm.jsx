@@ -1,45 +1,41 @@
-import React, { useRef } from "react";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/esm/Container";
 import Button from "react-bootstrap/esm/Button";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 function ContactForm() {
-  const form = useRef();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const formSubmit = (data) => {
-    console.log(data);
-    // emailjs
-    //   .sendForm(
-    //     "service_yz9jl5r",
-    //     "template_gu4od95",
-    //     form.current,
-    //     "DlAxeztiF9Ge1yK6x"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(data);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+
+  const formSubmit = async (data) => {
+    await emailjs
+      .send("service_yz9jl5r", "template_gu4od95", data, "DlAxeztiF9Ge1yK6x")
+      .then(
+        (result) => {
+          console.log("result => " + result.text);
+          navigate("/EmailSended")
+        },
+        (error) => {
+          console.log("error => " + error.text);
+        }
+      );
   };
   return (
     <Container>
-      <div className="my-5 p-5 shadow rounded">
+      <div className="my-5 p-5 shadow-lg rounded">
         <Form
           className="needs-validation"
           noValidate
           onSubmit={handleSubmit(formSubmit)}
         >
-          <h3 className="text-center my-3">Contact Us</h3>
+          <h3 className="text-center py-5">Contact Us</h3>
           <FloatingLabel
             controlId="floatingInput"
             label="Name"
@@ -102,7 +98,11 @@ function ContactForm() {
               type="text"
               placeholder="1234"
               name="phone_no"
-              {...register("phoneNo", { required: true })}
+              {...register(
+                "phoneNo",
+                { required: true },
+                { pattern: /^(\()?\d{3}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/ }
+              )}
               aria-invalid={errors.phoneNo ? "true" : "false"}
               isInvalid={errors.phoneNo}
             />
@@ -112,13 +112,18 @@ function ContactForm() {
                 Phone number is required
               </p>
             )}
+            {errors.phoneNo?.type === "pattern" && (
+              <p role="alert" className="text-danger">
+                Not a valid phone number
+              </p>
+            )}
           </FloatingLabel>
           <FloatingLabel
             controlId="floatingSelect"
             label="Type of enquery "
             className="mb-3"
           >
-            <Form.Select {...register("enquery")} name="subject">
+            <Form.Select {...register("enquery")}>
               <option value="Digital services">Digital services</option>
               <option value="Application development">
                 Application development
@@ -136,7 +141,7 @@ function ContactForm() {
               name="message"
               placeholder="Leave a comment here"
               style={{ height: "100px" }}
-              {...register("mesage")}
+              {...register("message")}
             />
           </FloatingLabel>
 

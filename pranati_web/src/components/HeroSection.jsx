@@ -22,7 +22,7 @@ function HeroSection() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://pranati.co.in/wp-content/uploads/2018/09/Technology-development.jpg"
+                src="https://pranatitechnologies.com/wp-content/uploads/2018/09/Technology-development.jpg"
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -100,7 +100,7 @@ function HeroSection() {
                   viewport={{ once: false, amount: 0.5 }}
                   transition={{  duration: .5 }}
                 >
-                  <p className="about-content">
+                  <p className="about-content ">
                     Pranati Technologies is a group of technology experts having
                     an average experience more than 23 years and more than
                     2,88,000 man hour work experience with the international

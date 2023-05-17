@@ -11,14 +11,14 @@ import { motion } from "framer-motion";
 
 function Navigationbar() {
   return (
-    <Navbar bg="light" expand="lg" className="navigationbar">
+    <Navbar bg="light" expand="lg" className="navigationbar shadow" >
       <Container fluid>
         <Navbar.Brand className="navigationbar-brandlogo" href="#">
           <Image src="https://pranati.co.in/wp-content/uploads/2018/10/Pranati-Technologies-Logo_03.png" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="navigationbar-link">
+          <Nav className="navigationbar-link  mx-auto px-5">
             <motion.div
               initial={{ opacity: 0.8 }}
               whileHover={{ scale: 1.3, opacity: 1 }}

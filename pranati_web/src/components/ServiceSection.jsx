@@ -16,7 +16,7 @@ function ServiceSection() {
             <Card className="shadow  bg-body rounded h-100">
               <Card.Img
                 variant="top"
-                src="https://pranati.co.in/wp-content/uploads/2018/09/Technology-development.jpg"
+                src="https://pranatitechnologies.com/wp-content/uploads/2018/09/Technology-development.jpg"
               />
               <Card.Body>
                 <Card.Title>Technology & Development</Card.Title>
@@ -33,7 +33,7 @@ function ServiceSection() {
             <Card className="shadow  bg-body rounded h-100">
               <Card.Img
                 variant="top"
-                src="https://pranati.co.in/wp-content/uploads/2018/10/Domainhostingwebemailseo-1.jpg"
+                src="https://pranatitechnologies.com/wp-content/uploads/2018/10/Domainhostingwebemailseo-1.jpg"
               />
               <Card.Body>
                 <Card.Title>Online Presence</Card.Title>
