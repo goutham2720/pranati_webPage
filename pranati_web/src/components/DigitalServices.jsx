@@ -5,6 +5,7 @@ import Row from "react-bootstrap/esm/Row";
 import Image from "react-bootstrap/Image";
 import Placeholder from "react-bootstrap/Placeholder";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function DigitalServices() {
   return (
@@ -22,8 +23,8 @@ function DigitalServices() {
           <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
             <motion.div
               initial={{ y: -100, opacity: 0 }}
-              whileInView={{ y: 0, opacity:1}}
-              viewport={{ once: false, amount: .6 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: false, amount: 0.6 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Image
@@ -43,6 +44,7 @@ function DigitalServices() {
               inContaineridually, focusing on the number of monthly data
               transfers, storage, email, and other features required.
             </p>
+            <Link to="/WebHostingAndEmail">Read more</Link>
           </Col>
         </Row>
       </motion.div>
@@ -65,12 +67,13 @@ function DigitalServices() {
               site more memorable, boost your search engine presence and attract
               new customers to your business.
             </p>
+            <Link to="/DomainRegistration">Read more</Link>
           </Col>
           <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 0.8 }}
-              viewport={{ once: false, amount: .6 }}
+              viewport={{ once: false, amount: 0.6 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Image
@@ -92,7 +95,7 @@ function DigitalServices() {
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 0.8 }}
-              viewport={{ once: false, amount: .6 }}
+              viewport={{ once: false, amount: 0.6 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Image
@@ -114,6 +117,7 @@ function DigitalServices() {
               your brand. We help to meet your needs and increase your
               expectations.
             </p>
+            <Link to="/BrandingServices">Read more</Link>
           </Col>
         </Row>
       </motion.div>
@@ -139,12 +143,13 @@ function DigitalServices() {
               means for businesses to communicate with current customers and
               grow their base.
             </p>
+            <Link to="/DigitalMarketingServices">Read more</Link>
           </Col>
           <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 0.8 }}
-              viewport={{ once: false, amount: .6 }}
+              viewport={{ once: false, amount: 0.6 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Image
@@ -166,7 +171,7 @@ function DigitalServices() {
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 0.8 }}
-              viewport={{ once: false, amount: .6 }}
+              viewport={{ once: false, amount: 0.6 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Image
@@ -189,6 +194,7 @@ function DigitalServices() {
               increase your brand awareness and visibility in your target
               market.
             </p>
+            <Link to="/SearchEngineOptimization">Read more</Link>
           </Col>
         </Row>
       </motion.div>
@@ -208,12 +214,13 @@ function DigitalServices() {
               Businesses use social networks to promote their products and
               services.
             </p>
+            <Link to="/SocialMediaNetworking">Read more</Link>
           </Col>
           <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
             <motion.div
               initial={{ y: -100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 0.8 }}
-              viewport={{ once: false, amount: .6 }}
+              viewport={{ once: false, amount: 0.6 }}
               transition={{ ease: "easeOut", duration: 1 }}
             >
               <Image

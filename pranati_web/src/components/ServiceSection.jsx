@@ -3,17 +3,26 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import { motion } from "framer-motion";
+import { Container } from "react-bootstrap";
 
 function ServiceSection() {
   return (
     <>
-      <div className="py-2 fw-bolder text-center fs-2 bg-secondary text-white my-3 ">
-        Services
-      </div>
-     
-        <Row className="d-flex justify-content-evenly py-5">
-          <Col sm={3}>
-            <Card className="shadow  bg-body rounded h-100">
+      <Container fluid>
+        <div className="py-2 fw-bolder text-center fs-2 bg-secondary text-white my-3 ">
+          Services
+        </div>
+        <motion.div
+                  initial={{ opacity: 0 ,y:-50 }}
+                  whileInView={{ opacity: 1,y:0}}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{  type:"spring" }}
+                >
+
+               
+        <Row className="d-flex justify-content-evenly  ">
+          <Col sm={3} className="my-3">
+            <Card className="shadow  bg-body rounded h-100 ">
               <Card.Img
                 variant="top"
                 src="https://pranatitechnologies.com/wp-content/uploads/2018/09/Technology-development.jpg"
@@ -29,8 +38,8 @@ function ServiceSection() {
             </Card>
           </Col>
 
-          <Col sm={3}>
-            <Card className="shadow  bg-body rounded h-100">
+          <Col sm={3} className="my-3">
+            <Card className="shadow  bg-body rounded h-100 ">
               <Card.Img
                 variant="top"
                 src="https://pranatitechnologies.com/wp-content/uploads/2018/10/Domainhostingwebemailseo-1.jpg"
@@ -46,8 +55,8 @@ function ServiceSection() {
             </Card>
           </Col>
 
-          <Col sm={3}>
-            <Card className="shadow  bg-body rounded h-100">
+          <Col sm={3} className="my-3">
+            <Card className="shadow  bg-body rounded h-100 ">
               <Card.Img
                 variant="top"
                 src="https://pranati.co.in/wp-content/uploads/2018/10/Digital-Marketign-and-branding275x183.jpg"
@@ -63,7 +72,8 @@ function ServiceSection() {
             </Card>
           </Col>
         </Row>
-      
+        </motion.div>
+      </Container>
     </>
   );
 }

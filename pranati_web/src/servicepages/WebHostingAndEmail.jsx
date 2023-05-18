@@ -7,8 +7,8 @@ function WebHostingAndEmail() {
   return (
     <>
       <Navigationbar />
-      <Container>
-        <h3>Web hosting & Email</h3>
+      <Container className="my-5">
+        <h3 className="fs-2 text-info">Web hosting & Email</h3>
         <p>
           When building an online presence, it is important to have a host for
           your website. At Pranati Technologies, we can help you with our
@@ -32,7 +32,7 @@ function WebHostingAndEmail() {
           tiers available. Shared hosting, virtual private server (VPS) hosting,
           dedicated hosting, and WordPress hosting plans are all available.
         </p>
-        <h4>Shared Web Hosting</h4>
+        <h4 className="fs-4">Shared Web Hosting</h4>
         <p>
           Shared hosting is web hosting in which multiple websites share the
           same server. For example, Site A shares the same server with sites B
@@ -40,20 +40,20 @@ function WebHostingAndEmail() {
           shared web hosting tends to be very inexpensive. You can find an
           option for less than per month.
         </p>
-        <h4>VPS Web Hosting</h4>
+        <h4 className="fs-4">VPS Web Hosting</h4>
         <p>
           VPS (virtual private server) hosting provides more flexibility than
           shared hosting. While it’s true that multiple sites may share the same
           server, each site’s traffic surge will have a less dramatic effect on
           other sites. That said, VPS hosting costs more than shared hosting.
         </p>
-        <h4>Dedicated Web hosting</h4>
+        <h4 className="fs-4">Dedicated Web hosting</h4>
         <p>
           On the other hand, dedicated hosting, which provides more server
           resources than shared hosting, is more expensive. It’s ideal for sites
           that demand an incredible amount of server resources.
         </p>
-        <h4>What is Cloud Hosting?</h4>
+        <h4 className="fs-4">What is Cloud Hosting?</h4>
         <p>
           Cloud hosting works by splitting a physical server into multiple
           virtual servers called cloud servers. These virtual servers connect to
@@ -82,12 +82,14 @@ function WebHostingAndEmail() {
           cloud server hosting services using the site’s easy-to-navigate
           interface.
         </p>
-        <h4>We also provide</h4>
-        <h5>Instant Setup</h5>
-        <h5>Top-level backups and security</h5>
-        <h5>Hostinger Dedicated Server</h5>
-        <h5>Easy data centre change</h5>
-        <h5>Free SSL</h5>
+        <h4 className="fs-4">We also provide</h4>
+        <ul>
+          <li>Instant Setup</li>
+          <li>Top-level backups and security</li>
+          <li>Hostinger Dedicated Server</li>
+          <li>Easy data centre change</li>
+          <li>Free SSL</li>
+        </ul>
         <p>
           With Pranati technologies cloud hosting, you can have an instant cloud
           hosting solution with the perfect balance of security and reliability.

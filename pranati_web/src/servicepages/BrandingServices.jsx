@@ -7,8 +7,8 @@ function BrandingServices() {
   return (
     <>
       <Navigationbar />
-      <Container>
-        <h3>Branding Services</h3>
+      <Container className="my-5">
+        <h3 className="fs-2 text-info">Branding Services</h3>
         <p>
           Creating a brand requires careful analysis of your target customers
           and market trends. We need to have a clear idea of how and what steps
@@ -20,7 +20,7 @@ function BrandingServices() {
           strategies, resources and brand management techniques for building
           your brand. We help to meet your needs and increase your expectations.
         </p>
-        <h4>What is Branding</h4>
+        <h4 className="fs-4">What is Branding</h4>
         <p>
           The act of branding creates an identity for a company or a product or
           service. It infuses meaning into what is being sold and attempts to
@@ -33,14 +33,14 @@ function BrandingServices() {
           It’s about making the public think about your business in a certain
           way.
         </p>
-        <h4>Why Branding is Important</h4>
+        <h4 className="fs-4">Why Branding is Important</h4>
         <p>
           Branding does not stop designing your products or a logo or an image.
           It is more than that; It tries to create a uniqueness of your products
           among other competitors. It also builds an emotional onding and trust
           with customers and stakeholders.
         </p>
-        <h4>Services we Provide</h4>
+        <h4 className="fs-4">Services we Provide</h4>
         <p>
           To determine the best audience for your brand, we first evaluate your
           existing customers to determine their age range and why they like your

@@ -6,10 +6,10 @@ import Row from "react-bootstrap/esm/Row";
 function WhatWeOffer() {
   return (
     <>
-      <Container className="flow py-5  text-secondary d-flex justify-content-evenly">
+      <Container className="flow py-5  text-secondary d-flex justify-content-evenly my-3">
         <Row>
           <h3 className="text-center">What we offer</h3>
-          <Col xs={4} className="d-flex justify-content-evenly">
+          <Col sm={4} className="d-flex justify-content-evenly my-3">
             <div >
               <h3 className="fs-6 text-dark">Digital Services</h3>
               <h3 className="fs-6 ">Domain Registration</h3>
@@ -22,7 +22,7 @@ function WhatWeOffer() {
               <h3 className="fs-6 ">OTT & Live Streaming</h3>
             </div>
           </Col>
-          <Col xs={4} className="d-flex justify-content-evenly">
+          <Col sm={4} className="d-flex justify-content-evenly my-3">
             <div>
               <h3 className="fs-6 text-dark">Application Development</h3>
               <h3 className="fs-6 ">Desktop Application</h3>
@@ -32,7 +32,7 @@ function WhatWeOffer() {
               <h3 className="fs-6 ">Mobile Application</h3>
             </div>
           </Col>
-          <Col xs={4} className="d-flex justify-content-evenly">
+          <Col sm={4} className="d-flex justify-content-evenly my-3">
             <div>
               <h3 className="fs-6 text-dark ">Support Services</h3>
               <h3 className="fs-6 ">IT Consultation</h3>

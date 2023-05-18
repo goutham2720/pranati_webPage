@@ -5,6 +5,7 @@ import Row from "react-bootstrap/esm/Row";
 import Image from "react-bootstrap/esm/Image";
 import Placeholder from "react-bootstrap/esm/Placeholder";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function DevelopmentServices() {
   return (
@@ -44,6 +45,7 @@ function DevelopmentServices() {
                 techniques to build customized, high-performing enterprise-grade
                 applications for your business.
               </p>
+              <Link to="/WebAppTechnologyAndDevelopment" >Read more</Link>
             </Col>
           </Row>
         </motion.div>
@@ -66,6 +68,7 @@ function DevelopmentServices() {
                 systems. These include iPhone, Windows, Android, iPad, Tablet
                 and custom apps.
               </p>
+              <Link to="/MobileAppDevelopment">Read more</Link>
             </Col>
             <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
               <motion.div
@@ -110,6 +113,7 @@ function DevelopmentServices() {
                 that enables service providers to deliver a superior user
                 experience across all major platforms.
               </p>
+              <Link to="/OttIpvtSolution">Read more</Link>
             </Col>
           </Row>
         </motion.div>
@@ -133,6 +137,7 @@ function DevelopmentServices() {
                 techniques to search large databases for patterns and
                 relationships that may use to make valid predictions.
               </p>
+              <Link to="/BigDataAnalysisAndMining">Read more</Link>
             </Col>
             <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
               <motion.div
@@ -181,6 +186,7 @@ function DevelopmentServices() {
                 protect your business-critical applications and data and help
                 accelerate recovery from a data breach or similar disruption.
               </p>
+              <Link to="/CyberSecurity">Read more</Link>
             </Col>
           </Row>
         </motion.div>
